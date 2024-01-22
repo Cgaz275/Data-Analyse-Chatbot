@@ -38,7 +38,7 @@ if prompt := st.chat_input("Input here..."):
     st.session_state.messages.append(
         {
             "role": "user",
-            "content": f"answer question : {prompt} based on\n{file_data}"
+            "content": f"searching on data : " + file_data + "and answer question from user : " + prompt + ". If there aren't any question related to data, you don't need to base on it, just answer base on what you know"
         }
     )
 
